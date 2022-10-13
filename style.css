@@ -20,6 +20,7 @@ textarea{
 button{
     background-color: aqua;
     cursor: pointer;
+    padding: 0.5rem;
 }
 
 

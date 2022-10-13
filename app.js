@@ -1,0 +1,28 @@
+const in1 = document.querySelector(".in1");
+const in2 = document.querySelector(".in2");
+const but1 = document.querySelector(".but1");
+const but2 = document.querySelector(".but2");
+const tex1 = document.querySelector(".tex1");
+const tex2 = document.querySelector(".tex2");
+
+but1.addEventListener("click", () => {
+  tex1.innerHTML = "";
+
+  let a = +in1.value;
+  let b = +in2.value;
+  for (let i = a; i <= b; i++) {
+    // if (i < 10) {
+        // console.log(i);
+    //   tex1.innerHTML += ` ${+i}                      `;
+    // }
+    //  else {
+      let x = i.toString().split("").reverse().join("");
+     
+      if (x == i) {
+       
+        tex1.innerHTML += ` ${+x}                     `;
+      }
+    // }
+  }
+
+});
