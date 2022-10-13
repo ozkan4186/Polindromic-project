@@ -10,7 +10,7 @@ but1.addEventListener("click", () => {
 
   let a = +in1.value;
   let b = +in2.value;
-  for (let i = a; i <= b; i++) {
+  for (let i =a; i <= b; i++) {
     // if (i < 10) {
         // console.log(i);
     //   tex1.innerHTML += ` ${+i}                      `;
@@ -20,9 +20,55 @@ but1.addEventListener("click", () => {
      
       if (x == i) {
        
-        tex1.innerHTML += ` ${+x}                     `;
+        tex1.innerHTML += `${+x}                      `;
       }
     // }
+    
+    
+        
+    
+    
   }
 
 });
+but2.addEventListener("click",()=>{
+    let a = +in1.value;
+    let b = +in2.value;
+    for(let i=a;i<=b;i++){
+    
+            tex2.innerHTML+= `
+                           
+            `
+
+        
+
+    }
+    const perfectNumber = (num) => {
+        let arr1=[]
+        console.log(num);
+        let count = 0;
+        console.log(count);
+        for (let i = 1; i < num; i++) {
+            if (num % i == 0) {
+                count += i
+                arr1.push(count)
+
+            }
+
+        }
+        return arr1 == num
+    }
+
+    console.log(perfectNumber(6));
+})
+
+
+
+
+
+
+
+
+
+
+
