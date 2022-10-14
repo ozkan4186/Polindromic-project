@@ -2,15 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 .container{
     width: 50%;
+    height: 50%;
     margin: 2rem auto;
     letter-spacing: 3rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+    border: 2px solid red;
+    background-color:fuchsia;
+    
  
 }
 textarea{
@@ -21,6 +26,25 @@ button{
     background-color: aqua;
     cursor: pointer;
     padding: 0.5rem;
+    border-radius: 10px;
+    width: 50px;
+}
+.tex1 , .tex2{
+    border: 5px solid black;
+}
+.in1 , .in2{
+    padding: 0.2rem;
+    border: 3px solid red;
+}
+@media screen and (max-width:700px) {
+
+    .container{
+        width: 100px;
+    }
+    button{
+        width: 50px;
+    }
+    
 }
 
 

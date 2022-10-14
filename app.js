@@ -6,7 +6,7 @@ const tex1 = document.querySelector(".tex1");
 const tex2 = document.querySelector(".tex2");
 
 but1.addEventListener("click", () => {
-  tex1.innerHTML = "";
+  tex1.innerHTML= ""
 
   let a = +in1.value;
   let b = +in2.value;
